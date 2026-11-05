@@ -1,3 +1,4 @@
+
 name: build
 
 on:
@@ -25,9 +26,9 @@ jobs:
 
       - name: Build SUPERPOWER & ARMOR EVOLUTION
         run: gradle build
-        working-directory: superpower-armor-evolution
+        working-directory: superpower-armor-evolution/SUPERPOWER-ARMOR-EVOLUTION-Fabric-1.20.1
 
       - uses: actions/upload-artifact@v4
         with:
           name: SUPERPOWER-ARMOR-EVOLUTION-Fabric-1.20.1
-          path: superpower-armor-evolution/build/libs/*.jar
+          path: superpower-armor-evolution/SUPERPOWER-ARMOR-EVOLUTION-Fabric-1.20.1/build/libs/*.jar
